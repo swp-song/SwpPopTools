@@ -31,7 +31,7 @@ pod 'SwpPopTools'
 ![(图片轮播效果)](https://raw.githubusercontent.com/swp-song/SwpPopTools/master/Screenshot/SwpPopTools.gif)
 ---
 
-##### 更新:
+##### 更新: 1.0.2
 
 ```
 1. 2017-01-20 16:11:44
