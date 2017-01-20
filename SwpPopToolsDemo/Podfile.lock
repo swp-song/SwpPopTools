@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (1.0.2)
+  - SwpTools (2.0.1)
+
+DEPENDENCIES:
+  - Masonry
+  - SwpTools
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SwpTools: b0fb8cb43d1528c66d2dfde394804069ddd6e28f
+
+PODFILE CHECKSUM: 1e70253ac46a0e289d438dc88cb5983c8fc9cd37
+
+COCOAPODS: 1.2.0.rc.1
