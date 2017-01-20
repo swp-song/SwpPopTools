@@ -26,12 +26,16 @@ pod 'SwpPopTools'
 ```
 ---
 
+---
+##### 效果：
+![(图片轮播效果)](https://raw.githubusercontent.com/swp-song/SwpPopTools/master/Screenshot/SwpPopTools.gif)
+---
+
 ##### 更新:
 
 ```
-
-1. 2017-01-20 15:28:01
-2. 第一次 上传版本
+1. 2017-01-20 16:11:44
+2. 完善Demo
 
 ```
 
