@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,11 +23,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-J5-Hp2">
-                                <rect key="frame" x="16" y="316" width="343" height="35"/>
+                                <rect key="frame" x="47" y="319" width="282" height="29"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="w2V-3W-GCG"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="POP"/>
                                 <connections>
@@ -37,10 +34,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="v1L-J5-Hp2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TDU-Z8-8IW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="v1L-J5-Hp2" secondAttribute="trailing" id="iXS-Hc-Rrx"/>
-                            <constraint firstItem="v1L-J5-Hp2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lIV-qI-PLA"/>
-                            <constraint firstItem="v1L-J5-Hp2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ouf-IA-4Y0"/>
+                            <constraint firstItem="v1L-J5-Hp2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MDL-G1-uFS"/>
+                            <constraint firstItem="v1L-J5-Hp2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VOn-qK-HLh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v1L-J5-Hp2" secondAttribute="trailing" constant="30" id="nXd-BD-Fb1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -49,6 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.5" y="31.5"/>
         </scene>
     </scenes>
 </document>

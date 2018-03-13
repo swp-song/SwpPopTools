@@ -14,12 +14,10 @@
 		2D33CA0B1E304A54006D58BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D33CA0A1E304A54006D58BD /* Assets.xcassets */; };
 		2D33CA0E1E304A54006D58BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D33CA0C1E304A54006D58BD /* LaunchScreen.storyboard */; };
 		2D33CA171E304BF7006D58BD /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D33CA161E304BF7006D58BD /* CustomView.m */; };
-		2D33CA1B1E304CEE006D58BD /* SwpPopTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D33CA1A1E304CEE006D58BD /* SwpPopTools.m */; };
 		8076EB659BC08F72CF18971C /* libPods-SwpPopToolsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F893468F93D736C0602361D4 /* libPods-SwpPopToolsDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D07A50F1E31F2E20087B6EE /* SwpPopHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpPopHeader.h; sourceTree = "<group>"; };
 		2D33C9FB1E304A54006D58BD /* SwpPopToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpPopToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D33C9FF1E304A54006D58BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D33CA011E304A54006D58BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,8 +30,6 @@
 		2D33CA0F1E304A54006D58BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D33CA151E304BF7006D58BD /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		2D33CA161E304BF7006D58BD /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
-		2D33CA191E304CEE006D58BD /* SwpPopTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpPopTools.h; sourceTree = "<group>"; };
-		2D33CA1A1E304CEE006D58BD /* SwpPopTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpPopTools.m; sourceTree = "<group>"; };
 		50F53580151F455B5B326A1C /* Pods-SwpPopToolsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwpPopToolsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwpPopToolsDemo/Pods-SwpPopToolsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B3994AD24DC4240879DDE137 /* Pods-SwpPopToolsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwpPopToolsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwpPopToolsDemo/Pods-SwpPopToolsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F893468F93D736C0602361D4 /* libPods-SwpPopToolsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwpPopToolsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +68,6 @@
 		2D33C9FD1E304A54006D58BD /* SwpPopToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2D33CA181E304CE3006D58BD /* SwpPopTools */,
 				2D33CA151E304BF7006D58BD /* CustomView.h */,
 				2D33CA161E304BF7006D58BD /* CustomView.m */,
 				2D33CA011E304A54006D58BD /* AppDelegate.h */,
@@ -94,17 +89,6 @@
 				2D33C9FF1E304A54006D58BD /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2D33CA181E304CE3006D58BD /* SwpPopTools */ = {
-			isa = PBXGroup;
-			children = (
-				2D33CA191E304CEE006D58BD /* SwpPopTools.h */,
-				2D33CA1A1E304CEE006D58BD /* SwpPopTools.m */,
-				2D07A50F1E31F2E20087B6EE /* SwpPopHeader.h */,
-			);
-			name = SwpPopTools;
-			path = ../../SwpPopTools;
 			sourceTree = "<group>";
 		};
 		55A9F993913979232BA72688 /* Pods */ = {
@@ -153,7 +137,7 @@
 		2D33C9F31E304A54006D58BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = swp_song;
 				TargetAttributes = {
 					2D33C9FA1E304A54006D58BD = {
@@ -230,13 +214,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwpPopToolsDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -250,7 +237,6 @@
 				2D33CA171E304BF7006D58BD /* CustomView.m in Sources */,
 				2D33CA031E304A54006D58BD /* AppDelegate.m in Sources */,
 				2D33CA001E304A54006D58BD /* main.m in Sources */,
-				2D33CA1B1E304CEE006D58BD /* SwpPopTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +271,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -293,7 +281,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -332,7 +324,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -340,7 +334,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

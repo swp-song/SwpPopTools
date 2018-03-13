@@ -1,15 +1,22 @@
 PODS:
-  - Masonry (1.0.2)
-  - SwpTools (2.0.1)
+  - Masonry (1.1.0)
+  - SwpPopTools (1.1.0)
+  - SwpTools (3.4.0)
 
 DEPENDENCIES:
   - Masonry
+  - SwpPopTools (from `../`)
   - SwpTools
 
+EXTERNAL SOURCES:
+  SwpPopTools:
+    :path: ../
+
 SPEC CHECKSUMS:
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  SwpTools: b0fb8cb43d1528c66d2dfde394804069ddd6e28f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SwpPopTools: faaf1482aaf3fd2d4add1f092645ce1be9bb3e09
+  SwpTools: de8d15f8af82c9b34145ae9989c7b5d97ffe12c6
 
-PODFILE CHECKSUM: 1e70253ac46a0e289d438dc88cb5983c8fc9cd37
+PODFILE CHECKSUM: 6d25e0b3e26b768e64f133240689b65c8b3cca5a
 
-COCOAPODS: 1.2.0.rc.1
+COCOAPODS: 1.4.0
